@@ -1,0 +1,38 @@
+{
+  "preset_id": "recap_explainer_v1",
+  "name": "리캡/해설형",
+  "target": "요약/설명 중심 채널",
+  "duration_targets": [30, 60, 180],
+  "sentence_count_range": {
+    "30": [8, 11],
+    "60": [13, 18],
+    "180": [28, 44]
+  },
+  "ending_mix": {
+    "-다": 0.5,
+    "-인데": 0.2,
+    "-죠": 0.15,
+    "-습니다": 0.15
+  },
+  "connectors": ["먼저", "반면", "즉", "결론적으로", "핵심은"],
+  "hook_patterns": [
+    "{topic}, 1분 안에 핵심만 정리해봄",
+    "이 사건은 {point} 때문에 판이 바뀜",
+    "결론부터 말하면 {conclusion}"
+  ],
+  "cta_patterns": [
+    "다음엔 어떤 주제를 해설할까?",
+    "헷갈린 포인트 있으면 댓글로 질문해줘"
+  ],
+  "taboo_rules": {
+    "hard_block": ["허위 사실 단정", "차별/혐오 조장"],
+    "soft_replace": {
+      "멍청": "부정확",
+      "죽여": "강하게 비판해"
+    }
+  },
+  "subtitle_rule": {
+    "max_chars_per_line": 8,
+    "max_lines": 2
+  }
+}
