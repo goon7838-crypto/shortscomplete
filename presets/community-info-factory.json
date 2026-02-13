@@ -1,0 +1,40 @@
+{
+  "preset_id": "community_info_factory_v1",
+  "name": "커뮤니티/정보형 양산",
+  "target": "운영자형 쇼츠 채널",
+  "duration_targets": [15, 30, 60, 180],
+  "sentence_count_range": {
+    "15": [4, 6],
+    "30": [7, 10],
+    "60": [12, 16],
+    "180": [26, 40]
+  },
+  "ending_mix": {
+    "-임": 0.25,
+    "-지": 0.25,
+    "-는데요": 0.15,
+    "-다": 0.35
+  },
+  "connectors": ["하지만", "심지어", "게다가", "결국", "참고로"],
+  "hook_patterns": [
+    "아직도 {topic} 이렇게 아는 사람 많음",
+    "{topic} 진짜 무서운 건 지금부터임",
+    "{a} vs {b}, 뭐가 더 위험할까"
+  ],
+  "cta_patterns": [
+    "너는 어떻게 생각해? 댓글로 남겨줘",
+    "이 케이스, 다음 편에서 더 파볼까?",
+    "비슷한 주제 원하면 키워드 남겨줘"
+  ],
+  "taboo_rules": {
+    "hard_block": ["개인정보 노출", "직접 범죄 조장"],
+    "soft_replace": {
+      "살인": "강력 사건",
+      "마약": "불법 약물"
+    }
+  },
+  "subtitle_rule": {
+    "max_chars_per_line": 7,
+    "max_lines": 2
+  }
+}
